@@ -21,7 +21,11 @@ Copy the CORBA program WSDL from the corba-poc-server to src/main/resources/wsdl
     http://localhost:18080/services/
 
  - Send SOAP requests to create incident
-
+   URL: http://localhost:18080/services/IncidentService
+   Request Method: POST
+   
+   Request body:
+   
 	 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.cxf.kepler.att.com/">
 	   <soapenv:Header/>
 	   <soapenv:Body>
