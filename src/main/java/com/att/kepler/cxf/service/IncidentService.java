@@ -13,4 +13,8 @@ public interface IncidentService {
 	@WebMethod
 	@WebResult(name = "IncidentResponse")
     public IncidentResponse createIncident(@WebParam(name = "incidentIdRequest") String incidentId);
+	
+	@WebMethod
+	@WebResult(name = "IncidentResponse")
+    public IncidentResponse findIncident(@WebParam(name = "incidentIdRequest") String incidentId);
 }
